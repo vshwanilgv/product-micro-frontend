@@ -1,8 +1,8 @@
 {
   "name": "@my-org/product",
   "scripts": {
-    "start": "webpack serve",
-    "start:standalone": "webpack serve --env standalone",
+    "start": "webpack serve --port 8084",
+    "start:standalone": "webpack serve --env standalone --port 8084",
     "build": "concurrently npm:build:*",
     "build:webpack": "webpack --mode=production",
     "analyze": "webpack --mode=production --env analyze",
