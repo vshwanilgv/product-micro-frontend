@@ -17,6 +17,8 @@ const Login = () => {
             localStorage.setItem("idToken", response.data.idToken);
 
       console.log("Login successful:", response.data);
+      alert("Login successful");
+    
     } catch (error) {
       console.error("Login failed:", error.response.data);
     }
