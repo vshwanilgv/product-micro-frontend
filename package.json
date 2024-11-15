@@ -1,11 +1,11 @@
 {
-  "name": "@my-org/product",
+  "name": "@my-org/home",
   "scripts": {
-    "start": "webpack serve --port 8084",
-    "start:standalone": "webpack serve --env standalone --port 8084",
+    "start": "webpack serve --port 8087",
+    "start:standalone": "webpack serve --env standalone --port 8087",
     "build": "concurrently npm:build:*",
-    "build:webpack": "webpack --mode=production",
-    "analyze": "webpack --mode=production --env analyze",
+    "build:webpack": "webpack --mode=homeion",
+    "analyze": "webpack --mode=homeion --env analyze",
     "lint": "eslint src --ext js",
     "format": "prettier --write .",
     "check-format": "prettier --check .",
