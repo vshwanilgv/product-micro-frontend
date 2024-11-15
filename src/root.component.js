@@ -4,6 +4,7 @@ import './output.css';
 import restaurant from './images/restaurant.jpg';
 import snacks from './images/snacks.jpeg';
 import drinks from './images/drinks.jpg';
+import lunch from './images/lunch.jpeg';
 import Card from './components/Card';
 import bakery from './images/bakery.jpeg';
 import cake from './images/cake.jpeg';
@@ -38,7 +39,7 @@ export default function Root(props) {
 
 
   <div className="flex flex-row w-full space-x-4 my-2 justify-center">
-    <Card title="Lunch" description="Explore best and quality products" image={restaurant} />
+    <Card title="Lunch" description="Explore best and quality products" image={lunch} />
     <Card title="Snacks" description="Explore best and quality products" image={snacks} />
     <Card title="Soft Drinks" description="Explore best and quality products" image={drinks} />
    
