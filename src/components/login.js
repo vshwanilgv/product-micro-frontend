@@ -15,9 +15,17 @@ const Login = () => {
             // Store tokens in localStorage
             localStorage.setItem("accessToken", response.data.accessToken);
             localStorage.setItem("idToken", response.data.idToken);
+            localStorage.setItem("refreshToken", response.data.refreshToken);
+            localStorage.setItem('userId', response.data.userId);
+            localStorage.setItem('cognitoId', response.data.cognitoId);
+
+            const accessToken = localStorage.getItem("accessToken");
+            const idToken = localStorage.getItem("idToken");
 
       console.log("Login successful:", response.data);
       alert("Login successful");
+
+      window.location.href = "/products";
     
     } catch (error) {
       console.error("Login failed:", error.response.data);
