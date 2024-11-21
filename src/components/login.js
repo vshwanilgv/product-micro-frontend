@@ -11,7 +11,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const response = await axios.post("http://localhost:3001/api/users/login", { email, password,username });
-
+      console.log(response)
             // Store tokens in localStorage
             localStorage.setItem("accessToken", response.data.accessToken);
             localStorage.setItem("idToken", response.data.idToken);
@@ -25,7 +25,7 @@ const Login = () => {
       console.log("Login successful:", response.data);
       alert("Login successful");
 
-      window.location.href = "/products";
+      
     
     } catch (error) {
       console.error("Login failed:", error.response.data);
